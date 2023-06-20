@@ -9,7 +9,7 @@ function solve(num1, num2, num3) {
         result = num3
     }
 
-    console.log(`The largest number is ${result}`)
+    console.log(`The largest number is ${result}.`)
 }
 
 solve(-3, -5, -22.5)
