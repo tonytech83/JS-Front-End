@@ -4,7 +4,7 @@ function solve(inputText, searchedWord) {
 
     for (const word of wordsInText) {
         if (word === searchedWord) {
-            couner += 1;
+            couner++;
         }    
     }
 
