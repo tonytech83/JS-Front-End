@@ -4,7 +4,6 @@ function formatGrade(grade) {
 
     if (grade < 3) {
         description = 'Fail'
-        console.log('Fail (2)');
     } else if (grade < 3.50) {
         description = 'Poor'
     } else if (grade < 4.50) {
@@ -15,8 +14,10 @@ function formatGrade(grade) {
         description = 'Excellent'
     }
 
-    if (description !== 'Fail') {
+    if (description != 'Fail') {
         console.log(`${description} (${grade.toFixed(2)})`)
+    } else {
+        console.log(`${description} (${grade})`)
     }
 
 }
