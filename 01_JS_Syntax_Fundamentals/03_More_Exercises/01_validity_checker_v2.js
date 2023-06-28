@@ -16,7 +16,7 @@ function validityChecker(x1, y1, x2, y2) {
 
     printValidity(point1, origin, isValid(point1.x, point1.y))
     printValidity(point2, origin, isValid(point2.x, point2.y))
-    printValidity(point1, point2 , isValid(point2.x - point1.x, point2.y - point1.y));
+    printValidity(point1, point2, isValid(point2.x - point1.x, point2.y - point1.y));
 }
 
 validityChecker(3, 0, 0, 4);
