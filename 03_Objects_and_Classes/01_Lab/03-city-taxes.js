@@ -1,10 +1,38 @@
-const numbers = [5, 2, 10, 1, 8];
+function cityTaxes(name, population, treasury) {
+  let city = {
+    name,
+    population,
+    treasury,
+    taxRate: 10,
+    collectTaxes: function () {
+      this.treasury += (this.population * this.taxRate)
+    },
+    applyGrowth: function (percentage) {
+      this.population *= (1 + percentage / 100)
+    },
+    applyRecession: function (percentage) {
+      this.treasury *= (1 - percentage / 100)
+    }
+  }
 
-const compareNumbers = {
-  ascending: (a, b) => a - b,
-  descending: (a, b) => b - a,
+  return city;
+
 }
 
-console.log(numbers.sort(compareNumbers.ascending))
-console.log(numbers.sort(compareNumbers.descending))
+const city =
+  cityTaxes('Tortuga',
+    7000,
+    15000);
 
+console.log(city);   
+
+// const city = cityTaxes
+//   (
+//     'Tortuga',
+//     7000,
+//     15000
+//   );
+// city.collectTaxes();
+// console.log(city.treasury);
+// city.applyGrowth(5);
+// console.log(city.population);
