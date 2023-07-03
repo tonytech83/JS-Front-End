@@ -9,18 +9,21 @@ function moviesParser(data) {
         let movieName = line.slice(1).join(' ');
 
         addMovie(movieName);
+
       } else if (line.includes('directedBy')) {
         let indexOfCommand = line.indexOf('directedBy');
         let movieName = line.slice(0, indexOfCommand).join(' ');
         let directorName = line.slice(indexOfCommand + 1).join(' ');
 
         addDirector(movieName, directorName);
+
       } else {
         let indexOfDate = line.indexOf('onDate');
         let movieName = line.slice(0, indexOfDate).join(' ');
         let date = line.slice(indexOfDate + 1).join(' ');
 
         addDate(movieName, date);
+        
       }
     })
 
