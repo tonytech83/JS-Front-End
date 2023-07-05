@@ -1,5 +1,3 @@
-// TODO
-
 function findUniquesNumberSequences(data) {
 
   let uniquesNumberSequences = new Set();
@@ -22,16 +20,9 @@ function findUniquesNumberSequences(data) {
     .sort((a, b) => a.length - b.length)
 
   sorted
-  .forEach(arr => console.log(arr))
-
-  // Array.from(uniquesNumberSequences).forEach(array => JSON.parse(array))
-  // //   .forEach(array => JSON.parse(array))
-  // // // .sort((a, b) => a.length - b.length)
+    .forEach(arr => console.log(`[${arr.join(", ")}]`))
 
 }
-
-
-
 
 findUniquesNumberSequences(
   [
@@ -41,10 +32,10 @@ findUniquesNumberSequences(
   ]
 )
 
-// findUniquesNumberSequences(
-//   [
-//     "[7.14, 7.180, 7.339, 80.099]",
-//     "[7.339, 80.0990, 7.140000, 7.18]",
-//     "[7.339, 7.180, 7.14, 80.099]"
-//   ]
-// )
+findUniquesNumberSequences(
+  [
+    "[7.14, 7.180, 7.339, 80.099]",
+    "[7.339, 80.0990, 7.140000, 7.18]",
+    "[7.339, 7.180, 7.14, 80.099]"
+  ]
+)
