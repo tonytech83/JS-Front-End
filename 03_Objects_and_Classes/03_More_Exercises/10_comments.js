@@ -29,7 +29,6 @@ function commentsParser(data) {
       .sort((a, b) => b[1].length - a[1].length)
       .forEach(article => {
         console.log(`Comments on ${article[0]}`)
-        // console.log(article[1])
         article[1]
           .sort((a, b) => a[0].localeCompare(b[0]))
           .forEach(comment => console.log(`--- From user ${comment[0]}: ${comment[1]} - ${comment[2]}`))
