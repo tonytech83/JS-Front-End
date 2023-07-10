@@ -1,0 +1,14 @@
+[
+  {
+    "img": "https://ikeabg.azureedge.net/images/1860x1860/2/variantimages/39270289/0.jpg",
+    "name": "Sofa",
+    "price": "259",
+    "decFactor": "0.4"
+  },
+  {
+    "img": "https://ikeabg.azureedge.net/images/1860x1860/variantimages/49499309/0.JPG",
+    "name": "Wardrobe",
+    "price": "120",
+    "decFactor": "1.2"
+  }
+]
