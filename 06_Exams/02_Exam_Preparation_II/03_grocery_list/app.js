@@ -15,6 +15,7 @@ function attachEvents() {
 
   const otherDOMSelectors = {
     tbody: document.querySelector('#tbody'),
+    form: document.querySelector('.form'),
   }
 
   let productToEdit = null;
@@ -68,7 +69,7 @@ function attachEvents() {
     }
     fetch(BASE_URL, httpHandlers)
       .then(() => {
-        clearAllInputs();
+        otherDOMSelectors.form.reset();
         loadProductHandler();
       })
       .catch(err => console.log(err))
@@ -103,17 +104,12 @@ function attachEvents() {
     fetch(BASE_URL + productToEdit, httpHandlers)
       .then(() => {
         loadProductHandler();
-        clearAllInputs();
+        otherDOMSelectors.form.reset();
         productToEdit = null;
         buttonDOMSelectors.updateProductBtn.disabled = true;
         buttonDOMSelectors.addProductBtn.disabled = false;
       })
       .catch((err) => console.log(err))
-  }
-
-  function clearAllInputs() {
-    Object.values(inputDOMSelectors)
-      .forEach(input => input.value = '');
   }
 
   function createElement(type, content, parentNode, id, classes, attributes, useInnerHtml) {
