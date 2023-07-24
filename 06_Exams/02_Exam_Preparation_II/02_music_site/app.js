@@ -39,8 +39,6 @@ function solve() {
       return;
     }
 
-
-
     const [genre, songName, author, date] = Object.values(inputDOMSelectors);
     const hitsInfoDiv = createElement('div', null, otherDOMSelector.allHitsContainer, null, ['hits-info']);
     createElement('img', null, hitsInfoDiv, null, null, { src: './static/img/img.png' });
