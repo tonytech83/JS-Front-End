@@ -55,7 +55,17 @@ function solve() {
     createElement('div', `Assigned to: ${assignee.value}`, article, null, ['task-card-assignee']);
     const actionsDiv = createElement('div', null, article, null, ['task-card-actions']);
     const deleteBtn = createElement('button', 'Delete', actionsDiv);
-    deleteBtn.addEventListener('click', loadDeleteForm)
+    
+    deleteBtn.addEventListener('click', (e) => {
+      const taskId = e.target.parentNode.parentNode.getAttribute('id');
+      document.getElementById('task-id').value = taskId;
+      for (const key in inputDOMSelectors) {
+        inputDOMSelectors[key].value = tasks[taskId][key];
+      }
+      disableAllInputs();
+      otherDOMSelectors.deleteTaskBtn.disabled = false;
+      otherDOMSelectors.createTaskBtn.disabled = true;
+    })
 
     tasks[taskId] = {
       title: title.value,
@@ -68,17 +78,6 @@ function solve() {
     updatePoints();
     otherDOMSelectors.createTaskForm.reset();
     taskNumber++;
-  }
-
-  function loadDeleteForm(e) {
-    const taskId = e.target.parentNode.parentNode.getAttribute('id');
-    document.getElementById('task-id').value = taskId;
-    for (const key in inputDOMSelectors) {
-      inputDOMSelectors[key].value = tasks[taskId][key];
-    }
-    disableAllInputs();
-    otherDOMSelectors.deleteTaskBtn.disabled = false;
-    otherDOMSelectors.createTaskBtn.disabled = true;
   }
 
   function deleteTaskHandler() {
