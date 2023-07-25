@@ -51,7 +51,7 @@ function solve() {
     createElement('div', `${label.value} ${labelToIconMap[label.value]}`, article, null, ['task-card-label', labelToClassMap[label.value]], null, true);
     createElement('h3', title.value, article, null, ['task-card-title']);
     createElement('p', description.value, article, null, ['task-card-description']);
-    createElement('div', `Estimated at ${points.value} pts`, article, ['task-card-points']);
+    createElement('div', `Estimated at ${points.value} pts`, article, null, ['task-card-points']);
     createElement('div', `Assigned to: ${assignee.value}`, article, null, ['task-card-assignee']);
     const actionsDiv = createElement('div', null, article, null, ['task-card-actions']);
     const deleteBtn = createElement('button', 'Delete', actionsDiv);
