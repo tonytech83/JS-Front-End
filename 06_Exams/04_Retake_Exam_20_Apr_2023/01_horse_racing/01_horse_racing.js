@@ -54,8 +54,8 @@ function solve(data) {
         horses.splice(horsePos, 1);
         horses.splice(horsePos + 2, 0, horseName);
       }
-      console.log(`${horseName} rages 2 positions ahead.`)
     }
+    console.log(`${horseName} rages 2 positions ahead.`)
   }
 
   function miracle() {
