@@ -23,6 +23,8 @@ The "JS Front-End" course is for basic knowledge of the JavaScript language, suc
 - [`JS Syntax Fundamentals`](https://github.com/tonytech83/JS-Front-End/tree/main/01_JS_Syntax_Fundamentals/Lab)
 - [`Functions and Statements`](https://github.com/tonytech83/JS-Front-End/tree/main/02_Functions_and_Statements)
 - [`Objects and Classes`](https://github.com/tonytech83/JS-Front-End/tree/main/03_Objects_and_Classes)
+- [`DOM and Events`](https://github.com/tonytech83/JS-Front-End/tree/main/04_DOM_and_Events)
+- [`HTTP and REST`](https://github.com/tonytech83/JS-Front-End/tree/main/05_HTTP_and_REST)
 
 <br/>
 <br/>
