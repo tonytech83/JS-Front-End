@@ -1,0 +1,23 @@
+{
+  "07f260f4-466c-4607-9a33-f7273b24f1b4": {
+      "name": "Milk",
+      "cost": 2.50,
+      "imgUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c8/Oat_milk_glass_and_bottles.jpg",
+      "isBought": false,
+      "_id": "07f260f4-466c-4607-9a33-f7273b24f1b4"
+  },
+  "bdabf5e9-23be-40a1-9f14-9117b6702a9d": {
+      "name": "Bread",
+      "cost": 1.20,
+      "imgUrl": "https://assets.bonappetit.com/photos/5c62e4a3e81bbf522a9579ce/5:4/w_2815,h_2252,c_limit/milk-bread.jpg",
+      "isBought": false,
+      "_id": "bdabf5e9-23be-40a1-9f14-9117b6702a9d"
+  },
+  "e7ddd762-515a-4357-b680-2f51ca4092c8": {
+    "name": "Eggs",
+    "cost": 6.45,
+    "imgUrl": "https://img.taste.com.au/oI-2zjyU/taste/2007/04/eggs-182316-1.jpg",
+    "isBought": false,
+    "_id": "e7ddd762-515a-4357-b680-2f51ca4092c8"
+  }
+}

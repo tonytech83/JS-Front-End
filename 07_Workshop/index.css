@@ -1,0 +1,113 @@
+.shopping-cart__container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 16px;
+}
+
+.shopping-cart__container > form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
+
+.shopping-cart__form-control > input[type="text"], input[type="number"] {
+  width: 100%;
+  border: 1px solid black;
+  padding: 16px;
+  box-shadow: 0 0 15px 4px rgba(0,0,0,0.06);
+  border-radius: 10px;
+}
+
+.shopping-cart__form-control > button {
+  display: flex;
+  gap: 10px;
+  cursor: pointer;
+  padding: 10px;
+  border: none;
+  background-color:#3F51B5;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 5px;
+}
+
+.shopping-cart__items-list {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.shopping-cart__total-price {
+  align-self: flex-end;
+  justify-self: flex-end;
+  margin-right: 32px;
+}
+
+.shopping-cart__item-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 20px;
+  margin: 0 20px;
+  padding: 16px;
+  border: 3px solid #3F51B5;
+  box-shadow: 10px 10px 32px -11px rgba(0,0,0,0.44);
+  border-radius: 50px;
+  background: cornsilk;
+  /* text-decoration: line-through; */
+}
+
+.shopping-cart__item-img {
+  width: 100px;
+  height: 100px;
+  border: 1px solid black;
+  border-radius: 50px;
+}
+
+.shopping-cart__item-name {
+  font-family: 'Times New Roman', Times, serif;
+  font-style: italic;
+  font-size: 24px;
+}
+
+.shopping-cart__item-cost {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-style: bold;
+  font-size: 26px;
+}
+
+.shopping-cart__item-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.shopping-cart__item-actions > button {
+  cursor: pointer;
+  background: none;
+  border: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.shopping-cart__item--buy-btn {
+  color: green;
+}
+
+.shopping-cart__item--remove-btn {
+  color: red;
+}
+
+.shopping-cart__item-actions > button:hover {
+  color: #3F51B5;
+  border-bottom: 1px solid #3F51B5;
+}
+
+svg {
+  width: 15x;
+  height: 15px;
+}
