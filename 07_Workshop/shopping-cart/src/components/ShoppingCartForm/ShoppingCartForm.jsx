@@ -10,6 +10,7 @@ function ShoppingCartForm({ setRefreshProducts }) {
 
   const addButtonHandler = (event) => {
     event.preventDefault();
+
     addProductToCart(itemName, itemCost, itemImgUrl)
       .then(() => {
         setItemName("");
@@ -54,7 +55,7 @@ function ShoppingCartForm({ setRefreshProducts }) {
       </div>
       <div className="shopping-cart__form-control">
         <button
-          disabled={!itemName || !itemCost || itemImgUrl}
+          disabled={!itemName || !itemCost || !itemImgUrl}
           type="submit"
           onClick={addButtonHandler}
         >
