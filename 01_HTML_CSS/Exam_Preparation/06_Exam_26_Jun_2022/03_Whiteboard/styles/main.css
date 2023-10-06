@@ -1,0 +1,185 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.4.2/css/all.min.css");
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+/* ----------------------------
+            Global
+------------------------------- */
+
+:root {
+  --clr-green-bkg: #bbf1dd;
+  --clr-green-text: #4dcf8e;
+}
+
+body {
+  font-family: "PT Sans", sans-serif;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+h3 {
+  font-size: 2.2em;
+}
+
+h5 {
+  font-size: 1.4em;
+  margin: 0em;
+}
+
+/* ----------------------------
+            Hero               
+------------------------------- */
+.hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)),
+    url(../image/computer-main.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  text-shadow: 2px 2px #000;
+  color: white;
+  padding: 2em 0em;
+}
+
+.hero .nav-list {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10em;
+  margin-bottom: 2.5em;
+}
+
+.hero .nav-list .nav-item {
+  font-size: 1.3em;
+}
+
+.hero .title {
+  font-size: 4em;
+  margin-bottom: 0.3em;
+}
+
+.hero .sub-title {
+  font-size: 1.5em;
+  font-weight: 500;
+  margin: auto;
+  margin-bottom: 2.2em;
+  width: 45%;
+}
+
+.hero .btn {
+  font-size: 1.2em;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 0.5em 1.2em;
+  background: var(--clr-green-text);
+  color: white;
+  border-radius: 0.3em;
+  text-shadow: 0px 0px;
+}
+
+.hero .btn:hover {
+  background: none;
+  padding: 0.3em 1em;
+  border: 3px solid white;
+}
+
+.hero .action {
+  padding-top: 3em;
+  font-size: 1.35em;
+  margin-bottom: 2em;
+}
+
+/* ----------------------------
+          Features              
+------------------------------- */
+.features {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.features img,
+.features .use {
+  width: 100%;
+}
+
+.features .use {
+  padding: 1.5em 4em;
+}
+
+.features .use .use-desc {
+  font-size: 1.4em;
+  font-weight: 500;
+}
+
+.features .use .option {
+  margin-top: 1.1em;
+  font-size: 1.1em;
+}
+
+.features .use .option i {
+  font-size: 1.2em;
+  color: var(--clr-green-text);
+}
+
+.features .use .option span {
+  padding-left: 1em;
+}
+
+.features .perfect-for {
+  padding: 1.5em 4em;
+  text-align: center;
+}
+
+.features .perfect-for .perf-title {
+  margin-bottom: 1.5em;
+}
+
+.features .icons {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 3em;
+  row-gap: 2em;
+}
+
+.features .icons .icon .icon-img {
+  margin: auto;
+  width: 50%;
+}
+
+.features .icons .icon .icon-text {
+  font-size: 1.5em;
+  font-weight: 600;
+  color: var(--clr-green-text);
+}
+
+/* -------------------------------
+            Questions           
+---------------------------------- */
+
+.questions {
+  background: var(--clr-green-bkg);
+  padding: 2em 6em;
+  text-align: center;
+}
+
+.questions .title {
+  margin-bottom: 1em;
+}
+
+.questions .q-list {
+  display: flex;
+  justify-content: space-between;
+  gap: 4em;
+  flex-wrap: wrap;
+  margin-bottom: 2em;
+}
+
+.questions .q-list .question {
+  width: 28%;
+}
+
+.questions .q-list .question p {
+  line-height: 1.2;
+}
+
+.email-us span {
+  font-weight: bold;
+}

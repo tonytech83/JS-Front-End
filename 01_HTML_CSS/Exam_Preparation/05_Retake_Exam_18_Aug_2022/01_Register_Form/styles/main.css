@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap");
+
+:root {
+  --clr-border-grey: #cecece;
+  --clr-btn-red: #a53d34;
+}
+
+body {
+  background: url(../images/background.png);
+  background-repeat: no-repeat;
+  font-family: 'Mulish', sans-serif;
+}
+
+.reg-form {
+  background: url(../images/form-background.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 2em;
+  box-shadow: 1em 1em 1em #9b9c9c;
+}
+
+label {
+  margin-bottom: 0.5em;
+  margin-top: 1em;
+}
+
+input {
+  border: 1px solid var(--clr-border-grey);
+  border-radius: 1em;
+  font-size: 1.5em; 
+}
+
+.reg-form .content {
+  width: 60%;
+  margin-right: auto;
+  padding: 3em;
+}
+
+.reg-form .content .title {
+  text-align: center;
+  text-transform: uppercase;
+  margin: 2em 0em 1em 0em;
+}
+
+/* Names */
+
+.reg-form .content .names {
+  display: flex;
+  justify-content: space-between;
+  gap: 1em;
+}
+
+.reg-form .content p {
+  min-width: 40%;
+  max-width: 100%;
+}
+
+.reg-form .content p,
+.email,
+.password,
+.confirm-pass {
+  display: flex;
+  flex-direction: column;
+}
+
+.acceptence {
+  margin: 1em 0em 2em 0em;
+}
+
+.reg-btn {
+  display: inline-block;
+  margin: auto;
+  text-decoration: none;
+  background: var(--clr-btn-red);
+  color: white;
+  text-transform: uppercase;
+  padding: 0.7em 1.3em;
+  border-radius: 1.3em;
+}

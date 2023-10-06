@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Courgette&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.4.2/css/all.min.css");
+
+:root {
+  --clr-red: #c0222a;
+  --clr-background: #f5f5f5;
+}
+body {
+  font-family: "Courgette", cursive;
+  max-width: 900px;
+  margin: auto;
+}
+
+section {
+  background: var(--clr-background);
+  padding: 2em 0em;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ---------------------------
+            Header                
+------------------------------ */
+
+.header {
+  margin: 0 auto;
+}
+
+.header .title {
+  font-size: 2.6em;
+  font-weight: 300;
+  margin-bottom: -10px;
+}
+
+.header .sub-title {
+  font-size: 1.1em;
+  text-align: right;
+  color: var(--clr-red);
+  font-weight: 600;
+  letter-spacing: 2px;
+  margin-right: -10px;
+}
+
+/* ---------------------------
+            Cards
+------------------------------ */
+
+.cards {
+  display: flex;
+  padding: 1.5em;
+  gap: 1em;
+}
+
+.cards .card {
+  border-radius: 0.5em;
+  background: #fff;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  position: relative;
+}
+
+.cards .card img {
+  height: 45%;
+}
+
+.cards .card .content {
+  height: auto;
+  padding: 1em 0.5em;
+  display: flex;
+  flex-direction: column;
+}
+
+.cards .card .content .card-title::after {
+  display: block;
+  content: "";
+  width: 95%;
+  border-top: 1px solid var(--clr-red);
+  margin: 0.5em;
+}
+
+.cards .card .content .card-sub-title {
+  font-size: 0.8em;
+  font-weight: 500;
+}
+
+.cards .card .content .btn {
+  font-size: 0.8em;
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translate(-50%, -0%);
+}
+
+.cards .card .content .btn a {
+  text-decoration: none;
+  color: black;
+}
+
+.cards .card .content .btn i {
+  color: var(--clr-red);
+  padding-left: 5px;
+}

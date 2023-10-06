@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+
+/* Global */
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+input {
+  font-size: 0.6em;
+}
+
+/* Calculator section */
+
+.section-calculator {
+  background-color: #f6f7f8;
+  border: 1px solid #8b8b8b;
+  box-shadow: 4px 8px 6px #9b9c9c;
+  border-radius: 1em;
+  max-width: 900px;
+  margin: 2em auto;
+  display: flex;
+  gap: 2em;
+  align-items: center;
+  overflow: hidden;
+  padding: 0em 2em 0em 0em;
+}
+
+.section-calculator .calc-image {
+  width: 50%;
+  height: auto;
+}
+
+.section-calculator .main-title {
+  font-size: 1.2em;
+  margin-bottom: 2em;
+}
+
+.section-calculator .calc-content {
+  width: 50%;
+  text-align: center;
+}
+
+.section-calculator .title {
+  font-weight: 600;
+  margin: 0.8em 0em;
+  font-size: 0.8em;
+}
+
+/* Units select */
+
+.section-calculator .calc-content .unit-select {
+  display: flex;
+  justify-content: center;
+  gap: 5em;
+  margin-bottom: 1em;
+}
+
+.unit-select .us-units,
+.unit-select .metric-units {
+  text-decoration: none;
+  color: black;
+  border: 1px solid black;
+  border-radius: 6px;
+  font-size: 0.7em;
+  width: 32%;
+  padding: 0.3em 1em;
+}
+
+.unit-select .us-units {
+  background-color: #92d763;
+}
+
+.unit-select .metric-units {
+  background-color: #e0e0df;
+}
+
+/* Gender set */
+
+.gender-select .gender-set {
+  display: flex;
+  gap: 1.5em;
+  justify-content: center;
+}
+
+.gender-select select {
+  width: 32%;
+  font-size: 0.6em;
+}
+
+.gender-select .year-set {
+  width: 32%;
+}
+
+/* Weight Set */
+
+.weight-set .weight-input {
+  width: 90%;
+}
+
+/* Height set */
+
+.height-set .height-input {
+  display: flex;
+  justify-content: center;
+  gap: 0.6em;
+}
+.height-set input {
+  width: 46%;
+}
+
+/* Button */
+
+.calc-btn {
+  margin-top: 3em;
+  padding: 0.3em 0em;
+  border-radius: 1em;
+  display: block;
+  text-decoration: none;
+  background-color: #3fa3d2;
+  box-shadow: 0px 6px 6px #9b9c9c;
+  color: white;
+  font-size: 0.7em;
+  font-weight: 700;
+}

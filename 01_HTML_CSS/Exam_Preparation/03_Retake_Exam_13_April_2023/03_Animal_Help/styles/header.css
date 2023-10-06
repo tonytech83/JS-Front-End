@@ -1,0 +1,18 @@
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em 2em 1em 4em;
+}
+
+.site-header {
+    font-weight: 700;
+}
+
+.site-header .nav-list {
+    display: flex;
+    gap: 1em;
+}
+
+.site-header .nav-item {
+    text-decoration: none;
+}

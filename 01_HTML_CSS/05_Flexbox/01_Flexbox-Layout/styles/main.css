@@ -1,0 +1,42 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #eee;
+  padding: 5rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.header,
+.footer {
+  padding: 2rem;
+  background: #fff;
+  border-radius: 0.4rem;
+  color: #000;
+  flex-basis: 100%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+}
+
+.header {
+  height: 150px;
+}
+
+main {
+  padding: 2rem;
+  flex: 8 1 40rem;
+  background: #fff;
+  border-radius: 0.4rem;
+  flex-basis: 60%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+  height: 300px;
+}
+
+aside {
+  padding: 2rem;
+  flex: 2 1 20rem;
+  background: #fff;
+  border-radius: 0.4rem;
+  width: 20%;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.7);
+  height: 300px;
+}

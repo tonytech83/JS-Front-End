@@ -1,0 +1,67 @@
+html {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background: rgb(238, 238, 238);
+}
+
+.card {
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+  width: 250px;
+  border-radius: 8px;
+  background: white;
+}
+
+.card h3 {
+  padding: 12px;
+  padding-bottom: 0;
+}
+
+.card footer {
+  border-top: 1px solid black;
+  padding: 12px;
+}
+
+.masonry {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 0 350px;
+  margin-bottom: 32px;
+}
+
+.masonry h2 {
+  width: 100%;
+}
+
+img {
+  object-fit: cover;
+  width: 100%;
+  overflow: hidden;
+  border-top-right-radius: 8px;
+  border-top-left-radius: 8px;
+}
+
+.column_1,
+.column_2,
+.column_3 {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 0 350px;
+}
+
+.flex h2 {
+  width: 100%;
+}
+
+p {
+  padding: 12px;
+}

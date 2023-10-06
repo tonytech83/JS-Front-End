@@ -1,0 +1,477 @@
+/* 
+bg - #070e27
+bg-light - #162044
+primary - #0059f7
+gray (text) - #7e8bb6 
+*/
+
+/* @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.4.2/css/all.min.css"); */
+
+/* MAIN header with navigation */
+
+html {
+  font-family: Arial, Helvetica, sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #070e27;
+  color: #fff;
+}
+
+p {
+  color: #7e8bb6;
+}
+
+.btn {
+  all: unset;
+  border-radius: 6px;
+  padding: 6px 12px;
+  cursor: pointer;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  padding: 16px 64px;
+  gap: 12px;
+  position: sticky;
+  top: 0;
+  background: #070e27;
+}
+
+.header .navigation {
+  margin-left: auto;
+  margin-right: 24px;
+}
+
+.header .nav-list {
+  display: flex;
+  gap: 12px;
+}
+
+.header .nav-list a {
+  text-decoration: none;
+  color: #fff;
+  letter-spacing: 1px;
+}
+
+.header .btn {
+  background: #162044;
+  color: #fff;
+}
+
+/* HERO section */
+
+#hero {
+  padding: 64px;
+  border-bottom: 2px solid #0c1430;
+}
+
+#hero .welcome {
+  max-width: 900px;
+  margin: 0 auto 48px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#hero .hero-img {
+  margin: 0 auto 48px auto;
+}
+
+#hero .welcome > * {
+  width: 45%;
+}
+
+#hero .welcome .title {
+  font-size: 42px;
+  line-height: 1.2;
+}
+
+#hero .welcome .info {
+  display: flex;
+  margin-bottom: 12px;
+}
+
+#hero .welcome .btn {
+  background: #0059f7;
+}
+
+#hero .partners {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+}
+
+/* HOW section */
+
+#how {
+  padding: 64px;
+}
+
+#how .how-subtitle {
+  text-align: center;
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+#how .how-title {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 48px;
+}
+
+#how .row {
+  display: flex;
+  align-items: center;
+  gap: 10%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+#how .row:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+#how .row:not(:last-child) {
+  margin-bottom: 48px;
+}
+
+#how .row .row-img {
+  width: 55%;
+}
+
+#how .row .row-content {
+  width: 35%;
+}
+
+#how .row .row-content .row-titile {
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+
+/* ------------------
+  FEATURES section
+------------------*/
+#features {
+  padding: 64px;
+  width: 900px;
+  margin: auto;
+}
+
+#features .feat-title {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+#features .feat-subtitle {
+  font-size: 20px;
+  margin-bottom: 20px;
+  width: 300px;
+}
+
+#features .box-section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px;
+  margin-bottom: 24px;
+}
+
+#features .box {
+  border: 2px solid #0c1430;
+  padding: 32px;
+  border-radius: 18px;
+}
+
+#features .box:hover {
+  background: #081131;
+  cursor: pointer;
+}
+
+#features .box i {
+  font-size: 32px;
+  color: #7e8bb6;
+  margin-bottom: 24px;
+}
+
+#features .box .box-title {
+  margin-bottom: 12px;
+}
+
+#features .box p {
+  color: #fff;
+  font-size: 14px;
+}
+
+#features .start {
+  display: block;
+  width: 770px;
+  padding: 64px;
+  margin: auto;
+  border: 2px solid #0c1430;
+  border-radius: 32px;
+  text-align: center;
+  background: #0059f7;
+}
+
+#features .start .start-title {
+  padding: 12px 0 18px 0;
+  font-size: 24px;
+}
+
+#features .start .btn {
+  background: #689eff;
+  font-size: 12px;
+  padding: 12px;
+}
+
+/* --------------------------
+      PRICING section
+----------------------------*/
+
+/* #pricing {
+  padding: 64px;
+}
+
+#pricing .pricing-subtitle {
+  text-align: center;
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+#pricing .pricing-title {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 48px;
+}
+
+#pricing .price-container {
+  width: 900px;
+  margin: auto;
+  display: flex;
+  gap: 32px;
+  justify-content: space-between;
+}
+
+#pricing .price-container .fa-dollar-sign {
+  display: inline-block;
+  font-size: 32px;
+  color: white;
+}
+
+#pricing .price-container .price {
+  display: inline-block;
+  font-size: 32px;
+  font-weight: bold;
+  padding: 0;
+  margin: 0;
+}
+
+#pricing .price-container .free {
+  background: #081131;
+  border-radius: 24px;
+  padding: 32px;
+}
+
+#pricing .price-container .basic {
+  gap: 32px;
+  background: #162044;
+  border-radius: 24px;
+  padding: 32px;
+}
+
+#pricing .price-container .premimum {
+  background: #081131;
+  border-radius: 24px;
+  padding: 32px;
+}
+
+#pricing .btn {
+  padding: 12px;
+}
+
+#pricing .free .btn {
+  background: #4e5a85;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 12px;
+}
+
+#pricing .basic .btn {
+  background: #0059f7;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 12px;
+}
+
+#pricing .premimum .btn {
+  background: #4e5a85;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 12px;
+} */
+
+/* ------------------------------
+        RESPONSIVE
+---------------------------------*/
+
+@media screen and (max-width: 767px) {
+  /* HERO section */
+  #hero {
+    padding: 64px;
+  }
+
+  #hero .welcome {
+    flex-direction: column;
+    gap: 24px;
+    text-align: center;
+  }
+
+  #hero .welcome .title {
+    width: 100%;
+  }
+
+  #hero .welcome > div {
+    width: 60%;
+  }
+
+  /* HOW section */
+  #how .row {
+    gap: 18px;
+  }
+
+  #how .row:not(:last-child) {
+    margin-bottom: 36px;
+  }
+
+  #how .row .row-img {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  /* HEADER  */
+  .header .navigation {
+    display: none;
+  }
+
+  .header .btn {
+    margin-left: auto;
+  }
+
+  /* HERO section */
+  #hero .welcome > div {
+    width: 80%;
+  }
+
+  /* HOW section */
+  #how .row {
+    flex-direction: column;
+  }
+
+  #how .row:nth-child(even) {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  #how .row .row-img {
+    width: 80%;
+  }
+}
+
+/* -------------------------------------
+      PRICING section -> mobile first
+----------------------------------------*/
+
+#pricing {
+  padding: 64px;
+}
+
+#pricing .pricing-subtitle {
+  text-align: center;
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+#pricing .pricing-title {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 48px;
+}
+
+#pricing .plans .plan:not(:last-child) {
+  margin-bottom: 24px;
+}
+
+#pricing .plans .plan {
+  padding: 16px;
+  border-radius: 6px;
+  background: #162044;
+}
+
+#pricing .plans .plan .title {
+  font-size: 18px;
+  font-weight: normal;
+  color: #7e8bb6;
+  padding-bottom: 32px;
+  border-bottom: 1px solid #7e8bb6;
+  margin-bottom: 32px;
+}
+
+#pricing .plans .plan .title .price {
+  display: block;
+  font-size: 32px;
+  font-weight: bold;
+  color: #fff;
+}
+
+#pricing .plans .plan .title .price .dollar-sing {
+  color: #7e8bb6;
+}
+
+#pricing .plans .plan .features {
+  color: #7e8bb6;
+}
+
+#pricing .plans .plan .features .feat {
+  margin-bottom: 16px;
+}
+
+#pricing .plan .btn {
+  padding: 12px;
+}
+
+#pricing .plan .btn {
+  background: #4e5a85;
+  padding: 12px 16px;
+  border-radius: 8px;
+  font-size: 12px;
+}
+
+@media screen and (min-width: 560px) {
+  #pricing .plans {
+    max-width: 900px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+
+  #pricing .plans .plan:not(:last-child) {
+    margin-bottom: 0px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  #pricing .plans {
+    grid-template-columns: repeat(3, 1fr);
+    align-items: end;
+  }
+
+  #pricing .plans .plan.promo {
+    margin-bottom: 36px;
+  }
+}

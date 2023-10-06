@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --clr-head: #363636;
+  --clr-text: #8c8c8c;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: var(--clr-text);
+}
+
+h1,
+h3 {
+  font-family: "Montserrat", sans-serif;
+  color: var(--clr-head);
+}
+
+.section {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 1600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+  border: 2px solid #000;
+  padding: 3em 9em;
+}
+
+.section .info,
+.section .picture {
+  width: 50%;
+}
+
+.section .info .title {
+  margin-bottom: 1em;
+}
+
+.section .info .desc:first-of-type{
+  margin-bottom: 0.5em;
+}
+
+.section .info .desc:last-of-type {
+  margin-bottom: 1em;
+}
+
+.features {
+  list-style: none;
+  padding: 0px;
+}
+
+.features .feature {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  margin-bottom: 0.8em;
+}
+
+.features .feature .feature-icon {
+  width: 50px;
+}

@@ -1,0 +1,344 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.4.2/css/all.min.css");
+
+/* -----------------------
+
+--------------------------*/
+:root {
+  --clr-green: #b5e2df;
+  --clr-grey: #dbdbdb;
+  --clr-gery-fees: #f3f5fa;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* -----------------------
+        Navigation
+--------------------------*/
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  padding: 2.5em 10em;
+  font-size: 1.3em;
+  align-items: center;
+  font-weight: 500;
+}
+
+.navigation .nav-list {
+  display: flex;
+  gap: 2em;
+}
+
+.navigation .buttons .btn-login,
+.navigation .buttons .btn-sign {
+  color: black;
+  padding: 0.8em 1.2em;
+  border-radius: 0.3em;
+}
+
+.navigation .buttons .btn-sign {
+  background: var(--clr-green);
+}
+
+/* -----------------------
+            Hero
+--------------------------*/
+.hero {
+  background: var(--clr-green);
+  padding: 7.2em 8em;
+  text-align: center;
+}
+
+.hero .title {
+  font-size: 4.9em;
+  font-weight: 600;
+  margin-bottom: 0.3em;
+}
+
+.hero .sub-title {
+  font-size: 1.4em;
+  margin-bottom: 2em;
+}
+
+.hero .buttons {
+  display: flex;
+  gap: 1em;
+  justify-content: center;
+  font-size: 1.3em;
+  color: white;
+}
+
+.hero .buttons li {
+  padding: 1.2em 1.8em;
+  background: black;
+  border-radius: 0.3em;
+}
+
+/* -----------------------
+            Stats
+--------------------------*/
+.stats {
+  display: flex;
+  justify-content: center;
+  padding: 5em 10em;
+}
+
+.stats .stat {
+  padding: 0em 0.2em;
+  border-left: 1px solid var(--clr-grey);
+  text-align: center;
+  height: 300px;
+}
+
+.stats .stat:last-child {
+  border-right: 1px solid var(--clr-grey);
+}
+
+.stats .stat .digits {
+  font-size: 3em;
+  margin-bottom: 0.5em;
+}
+
+.stats .stat .desc {
+  font-size: 1.4em;
+  font-weight: 500;
+}
+
+/* -----------------------
+        Everything
+--------------------------*/
+.everything {
+  display: flex;
+  background-color: var(--clr-green);
+  justify-content: center;
+}
+
+.everything img {
+  border: 1px dashed #9cb8b6;
+}
+
+.everything .content {
+  padding: 7em 0em 0em 8em;
+  width: 40%;
+}
+
+.everything .content .title {
+  font-size: 3em;
+  margin-bottom: 0.5em;
+  font-weight: 600;
+}
+
+.everything .content .sub-title {
+  font-size: 1.4em;
+  margin: 0 0 0.4em 0;
+}
+
+.everything .content .desc {
+  font-size: 1.2em;
+  margin-bottom: 2em;
+}
+
+.everything .content .plans {
+  display: inline-block;
+  border-bottom: 1px solid black;
+}
+
+.everything .content .plans-link {
+  font-size: 1.2em;
+  color: black;
+}
+
+/* -----------------------
+            Fees
+--------------------------*/
+.fees {
+  background: var(--clr-gery-fees);
+  text-align: center;
+  padding: 5em 0;
+}
+
+.fees div {
+  margin-bottom: 2.5em;
+}
+
+.fees .btn {
+  font-size: 1.4em;
+  font-weight: 500;
+  padding: 0.5em 1em;
+  background: var(--clr-green);
+  border-radius: 0.3em;
+  color: black;
+}
+
+.fees .title {
+  font-size: 3em;
+  margin-bottom: 2.5em;
+}
+
+.fee-plans {
+  border: 1px solid #e6e6e6;
+  background: #fff;
+  display: flex;
+  border-radius: 1em;
+}
+
+.fee-plans .card {
+  padding: 2em;
+  margin: 2em 0;
+}
+
+.fee-plans .card .title {
+  margin: 0;
+  font-size: 1.6em;
+}
+
+.fee-plans .card .desc {
+  text-align: left;
+  font-size: 1.2em;
+  font-weight: 500;
+  margin-bottom: 1em;
+}
+
+.fee-plans .card .price {
+  font-size: 3em;
+  font-weight: 600;
+  text-align: left;
+  margin-bottom: 0.5em;
+}
+
+.fee-plans .card .price .month {
+  font-size: 0.5em;
+  font-weight: 400;
+}
+
+.fee-plans .card hr {
+  margin-bottom: 3em;
+}
+
+.fee-plans .card .features-list {
+  font-size: 1.2em;
+  text-align: left;
+}
+
+.fee-plans .card .features-list li {
+  margin-bottom: 0.5em;
+}
+
+.fee-plans .card .features-list li:last-child {
+  margin-bottom: 3em;
+}
+
+.fee-plans .card a {
+  display: block;
+  background: var(--clr-green);
+  font-size: 1.4em;
+  padding: 1em;
+  border-radius: 0.3em;
+  color: black;
+  font-weight: 500;
+}
+
+.fee-plans .expand {
+  border-top-right-radius: 1em;
+  border-bottom-right-radius: 1em;
+  margin-bottom: 0;
+  width: 40%;
+  background: var(--clr-green);
+  padding: 2em;
+}
+
+.fee-plans .card:nth-child(2) {
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+}
+
+.fee-plans .expand .expand-title {
+  text-align: center;
+  font-size: 1.4em;
+  font-weight: 600;
+}
+
+.fee-plans .expand .title {
+  text-align: left;
+  font-size: 1.8em;
+  font-weight: 500;
+}
+
+.options-list {
+  text-align: left;
+  font-size: 1.3em;
+}
+
+.fee-plans .expand .contact-btn {
+  margin-top: 12.8em;
+}
+
+.fee-plans .expand .contact-btn a {
+  background: black;
+  display: block;
+  color: white;
+  font-size: 1.3em;
+  padding: 1em;
+  border-radius: 0.3em;
+}
+
+/* -----------------------
+            Started
+--------------------------*/
+.started {
+  padding: 6em;
+  background: var(--clr-green);
+}
+
+.started .content {
+  margin: auto;
+  width: 40%;
+  text-align: center;
+}
+
+.started .content .title {
+  font-size: 5em;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.started .content .sub-title {
+  font-size: 1.5em;
+  margin-bottom: 2em;
+}
+
+.started .content .buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+}
+
+.started .content .buttons li {
+  font-size: 1.2em;
+  padding: 1.2em 1.8em;
+  background: black;
+  border-radius: 0.3em;
+  color: white;
+}
+
+/* ---------------------------
+            Footer
+------------------------------*/
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 2em 4em;
+  font-size: 1.2em;
+}
+
+.social-list {
+  display: flex;
+  gap: 1em;
+}

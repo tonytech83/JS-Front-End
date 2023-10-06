@@ -1,0 +1,55 @@
+body {
+  background: rgb(238, 238, 238);
+  margin: 32px;
+}
+
+.page {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5%;
+}
+
+article {
+  width: 75%;
+}
+
+img {
+  background: rgb(255, 255, 255);
+  border: 2px solid black;
+  padding: 4px;
+  float: right;
+}
+
+blockquote {
+  font-family: Georgia, serif;
+  font-style: italic;
+
+  width: 50%;
+  float: right;
+  border-left: 3px solid rgb(221, 221, 221);
+  padding-left: 25px;
+  margin-left: 25px;
+}
+
+blockquote .name {
+  text-align: right;
+}
+
+.header {
+  border-bottom: 2px solid black;
+  margin-bottom: 12px;
+  width: 100%;
+}
+
+.header h1 {
+  margin-bottom: 12px;
+}
+
+a {
+  color: rgb(0, 153, 0);
+  text-decoration: none;
+}
+
+p {
+  margin-bottom: 12px;
+}

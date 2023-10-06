@@ -1,0 +1,268 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.4.2/css/all.min.css");
+
+/* ----------------------------
+            Global
+------------------------------- */
+
+:root {
+  --clr-grey-text: #505873;
+  --clr-yellow-link: #b08d17;
+}
+
+body {
+  position: relative;
+  font-family: Helvetica, sans-serif;
+  max-width: 1920px;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* --------------------------
+          Navigation
+-----------------------------*/
+.company {
+  position: absolute;
+  left: 5%;
+  top: 2%;
+  width: 280px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4)), #c7ab48;
+  box-shadow: 0px 0px 6px 1px rgba(0, 0, 0, 0.75);
+}
+
+.company img {
+  width: 60%;
+  height: 55%;
+}
+
+.navigation {
+  padding: 1em 8em 0em 8em;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.navigation .nav-lsit,
+.navigation .links-list {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  margin-left: auto;
+}
+
+.navigation .nav-lsit {
+  margin-bottom: 0.5em;
+}
+
+.navigation .nav-lsit li {
+  width: 200px;
+  height: 120px;
+  padding: 1.2em 0.5em;
+  color: var(--clr-grey-text);
+}
+
+.navigation .nav-lsit li:hover,
+.navigation .links-list li:hover {
+  color: white;
+  background: var(--clr-yellow-link);
+}
+
+.navigation .nav-lsit i {
+  font-size: 2em;
+  margin-bottom: 0.3em;
+}
+
+.navigation .nav-lsit {
+  font-size: 1.2em;
+}
+
+.navigation .links-list {
+  margin-right: 1.2em;
+  font-size: 1.3em;
+  font-weight: 500;
+}
+
+.navigation .links-list li {
+  padding: 0.5em 1.5em;
+}
+
+.navigation .links-list a {
+  color: var(--clr-grey-text);
+}
+
+/* --------------------------
+            Hero
+----------------------------- */
+.hero {
+  background: url(../image/slider.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 120%;
+  padding: 16em 6em 7em 6em;
+  color: white;
+}
+
+.hero div {
+  padding: 3em 2em 2em 2em;
+  width: 40%;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.hero div h3 {
+  font-size: 2em;
+  margin-bottom: 0.7em;
+}
+
+.hero div p {
+  line-height: 1.1;
+  font-size: 1.6em;
+  font-weight: 500;
+  margin-bottom: 1.3em;
+}
+
+.hero div a {
+  display: inline-block;
+  padding: 0.4em 1em;
+  border: 4px solid white;
+  font-size: 1.7em;
+  font-weight: 600;
+  color: #f4a212;
+}
+
+/* --------------------------
+            Card
+----------------------------- */
+.card {
+  padding: 2.5em 0em;
+  background: linear-gradient(
+    90deg,
+    rgba(144, 101, 15, 1) 0%,
+    rgba(203, 171, 63, 1) 65%
+  );
+  color: white;
+}
+
+.card .title {
+  text-align: center;
+  font-size: 2.5em;
+}
+
+.card .card-list {
+  width: 40%;
+  margin: auto;
+}
+
+.card .card-list li {
+  font-size: 1.6em;
+  font-weight: 500;
+  margin-top: 0.5em;
+}
+
+.card .card-list li:last-child {
+  margin-bottom: 1em;
+}
+
+.card div {
+  width: 100%;
+  text-align: center;
+}
+
+.card .btn {
+  display: inline-block;
+  padding: 0.4em 1em;
+  border: 4px solid white;
+  font-size: 1.7em;
+  font-weight: 600;
+  color: white;
+}
+
+/* --------------------------
+        Destinations
+----------------------------- */
+.destinations {
+  width: 70%;
+  margin: 2em auto;
+  text-align: center;
+  color: #525673;
+}
+
+.destinations .title {
+  font-size: 3.2em;
+  letter-spacing: 0.03em;
+  font-weight: 300;
+  margin-bottom: 0.5em;
+}
+
+.destinations .sub-title {
+  font-size: 1.8em;
+  margin-bottom: 1em;
+}
+
+.dest-cards {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1em;
+  margin: auto;
+}
+
+.dest-cards .dest-card img {
+  width: 100%;
+  padding: 3px;
+  border: 2px solid black;
+  border-radius: 100%;
+  margin-bottom: 1em;
+}
+
+.dest-cards .dest-card p {
+  font-size: 1.2em;
+  font-weight: 500;
+}
+
+/* --------------------------
+          Newsletter
+----------------------------- */
+.newsletter {
+  display: flex;
+  justify-content: space-between;
+  background: linear-gradient(
+    90deg,
+    rgba(203, 171, 63, 1) 0%,
+    rgba(176, 141, 22, 1) 35%
+  );
+  color: white;
+  padding: 1em 2em;
+}
+
+.newsletter div {
+margin: auto 0;
+}
+
+.newsletter div h5 {
+  margin-top: 0.5em;
+  font-size: 1.2em;
+  padding: 0;
+  margin: 0;
+}
+
+.newsletter .btn a {
+  display: inline-block;
+  padding: 0.4em 1em;
+  border: 4px solid white;
+  font-size: 1.7em;
+  font-weight: 600;
+  color: white;
+}
+
+/* --------------------------
+            Footer
+----------------------------- */
+footer {
+  font-size: 1.2em;
+  padding: 1em;
+  text-align: center;
+}

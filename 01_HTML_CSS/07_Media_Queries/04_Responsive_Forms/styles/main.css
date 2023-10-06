@@ -1,0 +1,109 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.4.2/css/all.min.css");
+
+.login-form {
+  font-family: Arial, sans-serif;
+  width: 400px;
+  margin: auto;
+  margin-top: 64px;
+}
+
+fieldset {
+  background-color: #f8f8f8;
+  border-radius: 4px;
+  padding: 16px;
+}
+
+legend {
+  border: 1px solid black;
+  border-radius: 4px;
+  font-size: 14px;
+  text-align: left;
+  width: 35%;
+  background-color: #fff;
+  padding: 6px 0px 6px 10px;
+}
+
+fieldset p {
+  font-weight: bold;
+}
+
+input {
+  flex: 1 1 100%;
+  border: 2px solid #767676;
+  border-radius: 4px;
+}
+
+.username {
+  margin: 0px 0px 20px 0px;
+  display: flex;
+  gap: 4px;
+  align-items: center;
+  position: relative;
+}
+
+.username i {
+  position: absolute;
+  left: 90px;
+}
+
+input {
+  padding-left: 30px;
+}
+
+.password {
+  margin: 0px 0px 20px 0px;
+  display: flex;
+  gap: 4px;
+  align-items: center;
+  position: relative;
+}
+
+.password i {
+  position: absolute;
+  left: 90px;
+}
+
+.btn {
+  all: unset;
+  background-color: black;
+  color: white;
+  font-size: 12px;
+  padding: 4px 18px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 400px) {
+  .username {
+    flex-direction: column;
+    margin: 0px;
+  }
+  
+  p {
+    position: relative;
+    right: 140px;
+  }
+
+  .username input {
+    width: 100%;
+  }
+
+  .username i {
+    left: 15px;
+    top: 35px;
+  }
+
+  .password {
+    flex-direction: column;
+    margin: 0px;
+  }
+
+  .password input {
+    width: 100%;
+  }
+
+  .password i {
+    left: 15px;
+    top: 35px;
+  }
+}

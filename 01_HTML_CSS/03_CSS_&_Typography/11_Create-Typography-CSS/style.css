@@ -1,0 +1,46 @@
+html {
+    font-family: Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    padding: 30px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: Georgia, serif;
+}
+
+blockquote {
+    border-left: 3px solid rgb(221, 221, 221);
+    padding-left: 25px;
+    font-style: italic;
+}
+
+table {
+    text-align: left;
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+td, th {
+    border: 1px solid gray;
+    padding-left: 3px;
+
+}
+
+thead {
+    background: grey;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: lightgray;
+}
+
+.signature {
+    text-align: right;
+}

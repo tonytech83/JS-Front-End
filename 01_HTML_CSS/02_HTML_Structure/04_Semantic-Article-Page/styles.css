@@ -1,0 +1,35 @@
+body {
+  width: 700px;
+  /* padding: 5px 15px; */
+  background-color: #e4e978;
+  margin: 15px 10px;
+}
+
+.comments-title {
+  font-size: 26px;
+}
+
+.apple-article {
+  border: 1px solid #b2ad7d;
+  background-color: #f2f4c0;
+  margin: 15px 10px;
+  padding: 5px 15px;
+}
+
+.comment-one {
+  border: 1px solid #b2ad7d;
+  margin: 15px 10px;
+  background-color: #f2f4c0;
+  font-style: italic;
+  padding: 5px 15px;
+  color: #5c6e91;
+}
+
+.comment-two {
+  border: 1px solid #b2ad7d;
+  margin: 15px 10px;
+  background-color: #f2f4c0;
+  font-style: italic;
+  padding: 5px 15px;
+  color: #5c6e91;
+}

@@ -1,0 +1,171 @@
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.4.2/css/all.min.css");
+
+body {
+  font-family: "Roboto", sans-serif;
+  width: 900px;
+  margin: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Abril Fatface", cursive;
+}
+
+/* -----------------------------------
+            Hero section              
+-------------------------------------- */
+
+.hero {
+  background: url(../image/image.jpg);
+  height: 700px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.hero .transparent {
+  position: relative;
+  left: 5%;
+  top: 5%;
+  width: 190px;
+  height: 175px;
+  padding: 1em 2em 1em 1em;
+  box-shadow: 2px 2px 10px 2px rgba(0, 0, 0, 0.45);
+}
+
+.hero .transparent .title {
+  font-size: 2.2em;
+}
+
+.hero .transparent .company-name {
+  font-size: 0.8em;
+}
+
+.hero .transparent hr {
+  border: 1px solid white;
+}
+
+.hero .gradient {
+  text-align: right;
+  position: relative;
+  width: 250px;
+  height: auto;
+  top: 5%;
+  left: 70%;
+  background-image: linear-gradient(to right, #9e958d, #c9c7c6);
+  color: white;
+  padding: 1.5em 1em 1em 0em;
+  box-shadow: 2px 2px 10px 2px rgba(0, 0, 0, 0.55);
+}
+
+.hero .gradient .big {
+  font-size: 3em;
+  margin-bottom: -20px;
+  font-weight: bold;
+  line-height: normal;
+  color: #8d8581;
+  text-shadow: 1px 1px 1px black;
+}
+
+.hero .gradient .desc {
+  font-size: 0.8em;
+  height: unset;
+  text-shadow: 1px 1px 4px black;
+}
+
+/* ------------------------------
+        Content section
+--------------------------------- */
+.content {
+  display: flex;
+}
+
+.content h2 {
+  text-transform: uppercase;
+}
+
+.content .about {
+  width: 70%;
+  padding: 2em 3em;
+  background: #f2f0f3;
+}
+
+.content .about .services .services-title {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  font-size: 1.8em;
+}
+
+.content .about .services p {
+  margin-bottom: 1.5em;
+  font-size: 0.9em;
+
+}
+
+.content .about .services span {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.contact .contact-title {
+  margin-top: 3em;
+  border-bottom: 2px solid black;
+  margin-bottom: 1em;
+}
+
+.contact span {
+  font-size: 0.95em;
+}
+
+.contact form {
+  margin-top: 1.5em;
+  font-size: 0.8em;
+}
+
+.contact form input {
+  padding: 0.7em 1em;
+  width: 270px;
+  border: 0px solid;
+  border-radius: 6px;
+  background: #b9b1ad;
+}
+
+::placeholder {
+  color: white
+}
+
+.contact .btn {
+  margin-left: 1em;
+  background: #69774d;
+  text-decoration: none;
+  border-radius: 1em solid #69774d;
+  padding: 0.8em 1.4em;
+  border-radius: 6px;
+  color: white;
+}
+
+.nomenclature {
+  width: 30%;
+  padding: 1em 2em;
+  background-color: #b9b1ad;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.nomenclature .digit {
+  font-size: 4em;
+  font-weight: 200;
+  color: white;
+  margin-bottom: -20px;
+}
+
+.nomenclature .text {
+  text-transform: uppercase;
+  font-size: 0.9em;
+}

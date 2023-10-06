@@ -1,0 +1,25 @@
+body {
+  display: flex;
+  background: lightgrey;
+  margin: 64px;
+}
+
+.gallery .list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 64px;
+  justify-content: space-between;
+}
+
+.gallery .list .item {
+  display: flex;
+  background: white;
+  border: 6px solid black;
+  padding: 24px 12px;
+  width: 30%;
+  height: 800px;
+}
+
+img {
+  object-fit: contain;
+}

@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css");
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+.cards {
+  width: 100vw;
+  padding: 5em 18em;
+  display: flex;
+  gap: 2em;
+  justify-content: center;
+  background-position: center;
+  background-image: url(../image/background.jpg);
+  background-size: cover;
+}
+
+.cards .card {
+  padding: 1.81em;
+  background-color: white;
+  max-width: 450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.cards .card.middle {
+  transform: scale(1.05);
+}
+
+.cards .card:hover {
+  transform: scale(1.03);
+}
+
+.cards .card.middle:hover {
+  transform: scale(1.08);
+}
+
+.card .title {
+  text-transform: uppercase;
+  margin-bottom: 0.8em;
+  font-size: 1.5em;
+  font-weight: 600;
+}
+
+.card .price {
+  margin-bottom: 1em;
+}
+
+.card .digits {
+  font-size: 4em;
+  font-weight: 700;
+}
+
+.card .price-info {
+  font-size: 0.8rem;
+  margin-bottom: 1.2em;
+  font-weight: 300;
+}
+
+.card .feature-item {
+  font-size: 1em;
+  padding-bottom: 0.2em;
+}
+
+.card .feature-item:last-child {
+  padding-bottom: 3.5em;
+}
+
+.card .btn {
+  display: inline-block;
+  text-decoration: none;
+  padding: 0.6em 1.6em;
+  background-color: black;
+  color: white;
+  border-radius: 4px;
+}

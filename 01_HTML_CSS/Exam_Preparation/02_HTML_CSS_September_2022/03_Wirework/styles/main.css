@@ -1,0 +1,199 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.4.2/css/all.min.css");
+
+:root {
+  --clr-title: #2c383b;
+  --clr-red: #e24e2a;
+  --clr-green: #1b9772;
+  --clr-button-gey: #ececec;
+  --clr-grey: #383838;
+  --clr-grey-text: #67675e;
+}
+
+html {
+  font-family: Helvetica, sans-serif;
+}
+/* -------------------------------------------
+                  Navigation
+---------------------------------------------- */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5em 4em 2.5em 4em;
+}
+
+.header .main {
+  font-size: 4em;
+  font-weight: bold;
+  padding-right: 0.5em;
+  border-right: 2px solid #b4b4b4;
+  color: var(--clr-title);
+}
+
+.header .sub_1,
+.header .sub_2 {
+  font-size: 1.5em;
+}
+
+.header .sub_1 {
+  margin-left: 1em;
+  color: var(--clr-grey-text);
+}
+
+.header .nav {
+  list-style: none;
+  display: flex;
+  gap: 0.2em;
+}
+
+.header .nav a {
+  text-decoration: none;
+  letter-spacing: 0.1em;
+  background-color: var(--clr-button-gey);
+  color: var(--clr-grey-text);
+  padding: 1.5em;
+  font-size: 1.5em;
+}
+
+.header .nav .nav-item:first-child a {
+  background-color: var(--clr-red);
+  color: #fff;
+}
+
+/* ----------------------------------------
+                Main
+------------------------------------------- */
+main .hero-img img {
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+}
+
+main .desc {
+  background-color: var(--clr-red);
+}
+
+main .desc p {
+  padding: 3em 11em;
+  text-align: center;
+  font-size: 1.35em;
+  color: #f3c1b3;
+}
+
+main .desc p u {
+  color: white;
+}
+
+/* ----------------------------------------
+              Main Features
+------------------------------------------- */
+
+.key-features {
+  background-color: var(--clr-grey);
+  padding: 8em 4em;
+}
+
+.key-features .features {
+  display: flex;
+  gap: 3em;
+}
+
+.key-features .features .item {
+  text-align: center;
+}
+
+.key-features .features .item .icon {
+  color: white;
+  font-size: 5em;
+}
+
+.key-features .features .item .icon i {
+  background-color: var(--clr-red);
+  padding: 0.5em;
+}
+
+.key-features .features .item .title {
+  margin-top: 1em;
+  color: white;
+  font-size: 1.8em;
+  margin-bottom: 1em;
+}
+
+.key-features .features .item .desc {
+  background-color: var(--clr-grey);
+  color: var(--clr-grey-text);
+  border-top: 1px solid var(--clr-grey-text);
+  padding-top: 2em;
+  font-size: 1.3em;
+}
+
+/* -------------------------------------
+            Registration
+---------------------------------------- */
+.register {
+  text-align: center;
+  padding: 6em 0;
+}
+
+.register .title {
+  font-size: 3em;
+  color: #555555;
+}
+
+.register .sub-title {
+  font-size: 1.5em;
+  color: #a3a3ab;
+  margin-bottom: 1em;
+}
+
+.register a {
+  display: inline-block;
+  font-size: 1.2em;
+  text-decoration: none;
+  font-weight: bold;
+  letter-spacing: 0.2em;
+  color: #fff;
+  padding: 1.5em 3em;
+  background-color: var(--clr-green);
+}
+
+/* ----------------------------------------
+                  Cards
+------------------------------------------- */
+
+.cards {
+  display: flex;
+  gap: 2em;
+  padding: 8em 2em;
+  background-color: var(--clr-grey);
+  text-align: center;
+}
+
+.cards .card .title {
+  font-size: 2.2em;
+  color: white;
+  padding-bottom: 1.5em;
+}
+
+.cards .card .desc {
+  font-size: 1.4em;
+  color: var(--clr-grey-text);
+  background-color: var(--clr-grey);
+}
+
+/* ------------------------------------------
+                Footer 
+---------------------------------------------*/
+.footer {
+  letter-spacing: 0.2em;
+  font-size: 1.2em;
+  font-weight: bold;
+  background-color: var(--clr-green);
+  padding: 8em;
+  text-align: center;
+  color: #68b297;
+}
+
+.footer span {
+  color: #99d1be;
+}

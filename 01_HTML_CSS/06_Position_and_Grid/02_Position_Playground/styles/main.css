@@ -1,0 +1,64 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.4.2/css/all.min.css");
+
+.viewport {
+  position: relative;
+  height: 50vh;
+  background-color: #eee;
+  overflow: hidden;
+}
+
+.viewport:nth-child(1) {
+  background: linear-gradient(
+    90deg,
+    rgba(31, 111, 157, 1) 0%,
+    rgba(44, 145, 159, 1) 35%,
+    rgba(64, 197, 161, 1) 100%
+  );
+}
+
+.viewport:nth-child(2) {
+  background: linear-gradient(
+    90deg,
+    rgba(170, 54, 114, 1) 0%,
+    rgba(196, 104, 51, 1) 35%,
+    rgba(206, 121, 30, 1) 100%
+  );
+}
+
+.card {
+  display: block;
+  width: 40%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+  border-radius: 4px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
+}
+
+.viewport:nth-child(2) .card {
+  height: 80%;
+  width: 30%;
+}
+
+.card img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.card .icon {
+  position: absolute;
+  inset: 0;
+  z-index: 10;
+  padding-bottom: 8px;
+  display: flex;
+  align-items: end;
+  justify-content: end;
+}
+
+.card .icon a {
+  color: #fff;
+  width: 32px;
+}

@@ -1,0 +1,124 @@
+body {
+  font-family: Arial, sans-serif;
+  background: rgb(238, 238, 238);
+  margin: 32px 80px;
+}
+
+section:not(:last-child) {
+  margin-bottom: 48px;
+}
+
+.site-title {
+  font-size: 32px;
+}
+
+.section-titile {
+  font-family: Georgia, serif;
+  font-size: 24px;
+  margin-bottom: 12px;
+}
+
+img {
+  background: rgb(255, 255, 255);
+  border: 3px solid black;
+  padding: 6px;
+}
+
+.section-titile {
+  font-family: Georgia, serif;
+  font-size: 24px;
+}
+
+.img_1 {
+  float: right;
+  margin-left: 16px;
+}
+
+.img_2 {
+  float: left;
+  margin-right: 16px;
+}
+
+blockquote {
+  font-family: Georgia, serif;
+  font-style: italic;
+
+  width: 50%;
+  float: right;
+  border-left: 3px solid rgb(221, 221, 221);
+  padding-left: 25px;
+  margin-left: 25px;
+}
+
+blockquote .name {
+  text-align: right;
+}
+
+.header {
+  border-bottom: 1px solid black;
+  margin-bottom: 16px;
+  width: 100%;
+}
+
+.header h1 {
+  margin-bottom: 16px;
+}
+
+a {
+  color: rgb(0, 153, 0);
+  text-decoration: none;
+}
+
+p {
+  margin-bottom: 16px;
+}
+
+@media (max-width: 500px) {
+  p {
+    font-size: 12px;
+    
+  }
+
+  .img_1 {
+    float: none;
+  }
+
+  .img_2 {
+    float: none;
+  }
+
+  blockquote {
+    width: 100%;
+    margin-bottom: 12px;
+  }
+}
+
+@media screen and (min-width: 500px) {
+  p {
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  p {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  p {
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  p {
+    font-size: 21px;
+  }
+}
+
+@media screen and (min-width: 1800px) {
+  p {
+    font-size: 23px;
+  }
+}

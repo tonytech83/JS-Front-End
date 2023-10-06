@@ -1,0 +1,18 @@
+#simple-grid {
+    width: 800px;
+    margin-top: 32px;
+    padding: 12px;
+    border: 2px solid black;
+    border-radius: 4px;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 100px);
+    gap: 12px;
+}
+
+#simple-grid .item {
+    background-color: orange;
+    border-radius: 4px;
+    text-align: center;
+}

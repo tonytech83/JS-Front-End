@@ -1,0 +1,297 @@
+@import url("https://use.fontawasome.com/releases/v6.1.2/css/all.css");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.4.2/css/all.min.css");
+
+:root {
+  --clr-blue: #95dcfe;
+}
+
+body {
+  max-width: 900px;
+  height: auto;
+  font-family: Arial, sans-serif;
+  margin: 0 auto;
+}
+
+/* --------------------------------
+        Section Differences
+----------------------------------- */
+.section-diff {
+  display: flex;
+  background-color: var(--clr-blue);
+  gap: 3em;
+  padding: 0em 3em 0em 3em;
+}
+
+.section-diff .content {
+  padding: 5em 2em;
+  display: flex;
+  flex-direction: column;
+  gap: 1.8em;
+}
+
+.section-diff .content .title {
+  font-size: 1.3em;
+  font-weight: 600;
+}
+
+.section-diff .content .desc {
+  font-size: 0.6em;
+}
+
+.section-diff .content .buttons {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.6em;
+  font-weight: bold;
+}
+
+.section-diff .content .buttons .btn-donate,
+.section-diff .content .buttons .btn-join {
+  text-decoration: none;
+  padding: 1em 4.3em;
+  border-radius: 4px;
+}
+
+.section-diff .content .buttons .btn-donate {
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+}
+
+.section-diff .content .buttons .btn-join {
+  background-color: black;
+  color: white;
+}
+
+/* -------------------------------------
+            Section Need
+---------------------------------------- */
+.section-need {
+  padding: 1em 4em 2em 4em;
+  text-align: center;
+}
+
+.section-need .content {
+  padding: 0em 12em;
+  align-items: center;
+}
+
+.section-need .title {
+  font-weight: bold;
+  margin-bottom: 1em;
+}
+
+.section-need .content-desc {
+  font-size: 0.7em;
+  font-weight: 600;
+  letter-spacing: 0.09em;
+  margin-bottom: 2em;
+}
+
+.section-need .desc {
+  margin-bottom: 1em;
+}
+
+.section-need .cards {
+  display: flex;
+  gap: 5em;
+  align-items: center;
+}
+
+.section-need .cards .title {
+  font-size: 0.8em;
+}
+
+.section-need .cards .desc {
+  font-size: 0.6em;
+  letter-spacing: 0.08em;
+}
+
+.section-need .cards .card i {
+  font-size: 6em;
+  padding-bottom: 0.2em;
+  color: var(--clr-blue);
+}
+
+/* -------------------------------
+            Section Work                
+---------------------------------- */
+.section-work {
+  background-color: var(--clr-blue);
+  padding: 2em 6em;
+  /* display: flex;
+  flex-direction: column; */
+}
+
+.section-work .title {
+  font-size: 1.3em;
+  font-weight: bold;
+  text-align: center;
+  padding-bottom: 1.5em;
+}
+
+.section-work .lists {
+  display: flex;
+  gap: 1em;
+  justify-content: space-around;
+  font-size: 0.8em;
+}
+
+.section-work .lists .left-list,
+.section-work .lists .right-list {
+  width: 40%;
+}
+
+.section-work .lists .left-list li {
+  margin-bottom: 2.2em;
+}
+
+.section-work .lists .right-list li {
+  margin-bottom: 1em;
+}
+
+.section-work .button .work-btn {
+  display: inline-block;
+  margin-left: 38%;
+  background: black;
+  color: white;
+  text-decoration: none;
+  padding: 0.8em 5em;
+  border-radius: 4px;
+  font-size: 0.6em;
+}
+
+/* ---------------------------------
+         Section Animals
+------------------------------------*/
+.section-animal {
+  text-align: center;
+  padding: 2em;
+}
+
+.section-animal .title {
+  font-size: 1.8em;
+  font-weight: 900;
+  padding-bottom: 0.4em;
+}
+
+.section-animal .sub-title {
+  font-size: 0.7em;
+  font-weight: 600;
+  margin-bottom: 2em;
+}
+
+.section-animal .pictures-list {
+  display: flex;
+  gap: 2em;
+}
+
+/* -------------------------------
+            Section How
+---------------------------------- */
+.section-how .title {
+  text-align: center;
+  font-size: 1.2em;
+  font-weight: 700;
+  margin-bottom: 1em;
+}
+
+.section-how .work-cards {
+  display: flex;
+  gap: 1em;
+  flex-direction: column;
+  width: 80%;
+  margin: auto;
+}
+
+.section-how .work-cards .card {
+  border: 1px solid #eaeaea;
+  border-radius: 0.5em;
+}
+
+.section-how .work-cards:last-child {
+  margin-bottom: 3.4em;
+}
+
+.section-how .work-cards .card .work-title {
+  border-top-right-radius: 0.5em;
+  border-top-left-radius: 0.5em;
+  font-size: 0.8em;
+  font-weight: 700;
+  background-color: var(--clr-blue);
+  padding: 1.4em;
+}
+
+.section-how .work-cards .card .work-desc {
+  font-size: 0.7em;
+  font-weight: 600;
+  padding: 1.4em;
+}
+
+/* ----------------------------------
+        News Subscription        
+------------------------------------- */
+.news-subscription {
+  display: flex;
+  gap: 3em;
+  align-items: center;
+}
+
+.news-subscription img {
+  width: 50%;
+}
+
+.news-subscription .news {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.news-subscription .news .news-title {
+  font-size: 1.2em;
+  font-weight: 700;
+}
+
+.news-subscription .news .news-desc {
+  font-size: 0.7em;
+}
+
+.news-subscription .news-subs input {
+  padding: 0.6em 1em;
+  font-size: 0.7em;
+  font-weight: 600;
+  border: 1px solid #dddddd;
+  border-radius: 4px;
+  margin-bottom: 2em;
+}
+
+.news-subscription .news-subs button {
+  all: unset;
+  background-color: black;
+  color: white;
+  padding: 0.7em 4em;
+  font-size: 0.7em;
+  font-weight: 600;
+  border-radius: 4px;
+}
+
+/* --------------------------------
+                Footer                      
+----------------------------------- */
+.site-foorter {
+  padding: 1em 3em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.site-foorter .social-list{
+  display: flex;
+  gap: 0.5em;
+  font-size: 1.2em;
+}
+
+.site-foorter .footer-rigths {
+    font-size: 0.65em;
+    font-weight: 700;
+}

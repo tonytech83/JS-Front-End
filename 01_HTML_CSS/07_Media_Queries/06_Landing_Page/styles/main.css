@@ -1,0 +1,266 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.4.2/css/all.min.css");
+
+html {
+  font-family: Arial, sans-serif;
+}
+
+.header {
+  width: 90vw;
+  display: flex;
+  align-items: center;
+  margin: auto;
+  margin-bottom: 64px;
+}
+
+.header .title {
+  margin-right: auto;
+}
+
+.header .title h2 {
+  font-size: 32px;
+  color: purple;
+}
+
+.header .title p {
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  font-size: 12px;
+}
+
+.navigation .list {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.navigation .list a {
+  text-decoration: none;
+}
+
+/* --------------------- 
+        NEED section
+------------------------*/
+
+.need {
+  width: 80vw;
+  margin: auto;
+  margin-bottom: 64px;
+}
+
+.need .need-title {
+  font-size: 28px;
+}
+
+.need .content {
+  display: flex;
+  align-items: center;
+}
+
+.need i {
+  display: inline-block;
+  font-size: 82px;
+  padding-left: 24px;
+}
+
+.need p {
+  margin-bottom: 12px;
+  font-size: 14px;
+}
+
+.need span {
+  font-size: 12px;
+  border: 1px solid black;
+  padding: 4px 14px;
+  border-radius: 2px;
+}
+
+/* ---------------------------
+        TEAM section
+------------------------------ */
+
+.team {
+  width: 80vw;
+  margin: auto;
+}
+
+.team .cards {
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.team .title {
+  text-align: center;
+  font-size: 28px;
+}
+
+.team hr {
+  width: 10%;
+  margin-bottom: 32px;
+}
+
+.team .card {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-size: 16px;
+  margin-bottom: 32px;
+}
+
+.team .card img {
+  width: 100px;
+  border-radius: 100%;
+  aspect-ratio: 1/1;
+  margin-bottom: 24px;
+}
+
+.team .card .name {
+  font-weight: bold;
+}
+
+.team .card .job-title {
+  margin-bottom: 12px;
+}
+
+.team .card .info {
+  font-style: italic;
+}
+
+/* ------------------------------
+        sing-up section
+--------------------------------- */
+
+.sing-up {
+  width: 100vw;
+  background: purple;
+  margin-bottom: 32px;
+}
+
+.sing-up .title {
+  color: #fff;
+  font-size: 24px;
+  text-align: center;
+}
+
+.sing-up hr {
+  width: 10%;
+  margin-bottom: 24px;
+}
+
+.sing-up .input-field {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  justify-content: center;
+  padding-bottom: 32px;
+}
+
+.sing-up input {
+  height: 26px;
+  border-radius: 2px;
+}
+.sing-up .btn {
+  all: unset;
+  background-color: #fff;
+  border-radius: 2px;
+  padding: 4px 12px;
+  font-size: 12px;
+}
+
+/* -----------------------------
+    testimonials section 
+--------------------------------*/
+
+.testimonials {
+  width: 80vw;
+  margin: auto;
+}
+
+.testimonials .cards {
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.testimonials .title {
+  text-align: center;
+  font-size: 28px;
+}
+
+.testimonials hr {
+  width: 10%;
+  margin-bottom: 32px;
+}
+
+.testimonials .card {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-size: 16px;
+  margin-bottom: 32px;
+}
+
+.testimonials .card img {
+  width: 100px;
+  border-radius: 100%;
+  aspect-ratio: 1/1;
+  margin-bottom: 24px;
+}
+
+.testimonials .card .name {
+  font-weight: bold;
+}
+
+.testimonials .card .info {
+  font-style: italic;
+  margin-bottom: 24px;
+}
+
+/* ------------------------------
+        FOOTER section
+--------------------------------- */
+
+.footer {
+  display: grid;
+  padding: 64px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  background-color: rgb(238, 238, 238);
+  font-size: 14px;
+}
+
+.footer .info {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8px;
+}
+
+/* -----------------------------
+        MOBILE SCREEN 
+------------------------------- */
+
+@media screen and (max-width: 400px) {
+  .navigation .list {
+    display: none;
+  }
+
+  .team .cards {
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .testimonials .cards {
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footer {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+}

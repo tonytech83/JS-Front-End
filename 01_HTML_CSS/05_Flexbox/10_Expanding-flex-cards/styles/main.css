@@ -1,0 +1,30 @@
+body {
+  display: flex;
+  background: rgb(238, 238, 238);
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  margin: auto;
+}
+
+img {
+  border-radius: 8px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.7);
+  object-fit: none;
+  height: 375px;
+}
+
+.pic_1,
+.pic_3,
+.pic_4 {
+  width: 120px;
+}
+
+.pic_2 {
+  background: black;
+  width: 630px;
+}

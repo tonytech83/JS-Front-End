@@ -1,0 +1,34 @@
+body {
+  display: flex;
+  flex-direction: column;
+  background: rgb(238, 238, 238);
+  height: 100vh;
+  font-family: Helvetica, sans-serif;
+}
+
+.title {
+  flex-basis: 100%;
+  border-bottom: 3px solid rgb(102, 102, 102);
+  text-transform: uppercase;
+  margin-bottom: 12px;
+  padding: 24px;
+}
+
+.content {
+  padding: 24px;
+}
+
+.content h2 {
+  font-family: Georgia, serif;
+  margin-bottom: 12px;
+}
+
+.content p {
+  margin-bottom: 12px;
+}
+
+.footer {
+  background: rgb(102, 102, 102);
+  color: rgb(255, 255, 255);
+  padding: 24px;
+}

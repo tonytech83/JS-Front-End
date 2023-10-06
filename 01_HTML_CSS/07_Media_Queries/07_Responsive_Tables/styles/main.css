@@ -1,0 +1,36 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: rgb(238, 238, 238);
+  width: 90vw;
+  margin: auto;
+  margin-top: 64px;
+}
+
+table {
+  width: 100%;
+  table-layout: fixed;
+  border-collapse: collapse;
+}
+
+.header {
+  background-color: black;
+  color: #fff;
+  text-align: left;
+}
+
+.header th {
+  padding-left: 8px;
+  border: 1px solid rgb(218, 218, 218);
+}
+
+.row td {
+  border: 1px solid rgb(218, 218, 218);
+  padding-left: 8px;
+  font-weight: bold;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #fff;
+}
+
+/* TODO - responsive table*/

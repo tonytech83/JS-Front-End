@@ -1,0 +1,63 @@
+/* 
+button - #786eff
+headings - #273240
+*/
+
+body {
+  font-family: Helvetica, sans-serif;
+  color: #273240;
+}
+
+.enterprise {
+  margin: 64px auto;
+  width: 1000px;
+  background-color: #f6f8f9;
+  padding: 0px 48px;
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.enterprise .info {
+  width: 50%;
+  padding: 52px 0px;
+}
+
+.enterprise .subtitle {
+  font-size: 12px;
+  font-weight: normal;
+  margin-bottom: 12px;
+}
+
+.enterprise .title {
+  font-size: 34px;
+  font-weight: normal;
+  margin-bottom: 24px;
+}
+
+.enterprise .info .description {
+  font-size: 20px;
+  color: #646f79;
+  line-height: 1.4;
+  margin-bottom: 24px;
+}
+
+.enterprise .img {
+  width: 30%;
+}
+
+.enterprise .btn {
+  all: unset;
+  padding: 10px 30px;
+  border: 2px solid #273240;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.enterprise .btn.sales {
+  background-color: #786eff;
+  border-color: #786eff;
+  color: white;
+  margin-right: 12px;
+}

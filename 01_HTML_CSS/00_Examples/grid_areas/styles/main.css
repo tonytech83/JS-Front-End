@@ -1,0 +1,72 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 800px;
+}
+
+#areas-grid {
+    border: 2px solid black;
+    margin-top: 32px;
+    margin-left: 32px;
+    border-radius: 6px;
+    padding: 12px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(6, 100px);
+    gap: 12px;
+    grid-template-areas: 
+    "small1 medium1 large"
+    "small1 medium1 large"
+    "small2 medium1 large"
+    "small2 medium2 large"
+    "small3 medium2 large"
+    "small3 medium2 large";
+}
+
+#areas-grid .item {
+    overflow: hidden;
+    border-radius: 6px;
+}
+
+#areas-grid .grid-article {
+    position: relative;
+    height: 100%;
+}
+
+#areas-grid .grid-article img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#areas-grid .grid-article h2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+}
+
+#areas-grid .item1 {
+    grid-area: small1;
+}
+
+#areas-grid .item2 {
+    grid-area: small2;
+}
+
+#areas-grid .item3 {
+    grid-area: small3;
+}
+
+#areas-grid .item4 {
+    grid-area: medium1;
+}
+
+#areas-grid .item5 {
+    grid-area: medium2;
+}
+
+#areas-grid .item6 {
+    grid-area: large;
+}

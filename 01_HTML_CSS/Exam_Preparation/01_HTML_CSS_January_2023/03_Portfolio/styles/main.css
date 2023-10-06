@@ -1,0 +1,236 @@
+:root {
+  --article-bg: #efefef;
+  --icon-color: #909090;
+  --font-color: #222222;
+}
+
+/* -----------------------------
+          Global styles
+-------------------------------- */
+
+body {
+  font-family: "Raleway", sans-serif;
+  color: var(--font-color);
+}
+
+.box {
+  max-width: 1880px;
+  margin: 40px 40px;
+  background-color: var(--article-bg);
+  height: 80vh;
+  padding: 200px 140px;
+  overflow: hidden;
+}
+
+.box-flexed {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.box-flexed .content {
+  flex: 0 0 45%;
+}
+
+.box-flexed .article-img {
+  flex: 0 1 35%;
+}
+
+.box .title {
+  font-size: 48px;
+  font-weight: 200;
+  margin-bottom: 40px;
+}
+
+.box .description {
+  font-style: italic;
+  margin-bottom: 40px;
+  font-size: 20px;
+  text-align: left;
+}
+
+.box .divider.vertical {
+  height: 80px;
+  width: 1px;
+  background-color: var(--font-color);
+}
+
+.box .divider.horizontal {
+  display: inline-block;
+  vertical-align: middle;
+  height: 1px;
+  width: 80px;
+  background-color: var(--font-color);
+  margin-right: 32px;
+}
+
+/* -------------------------
+          Hero
+---------------------------- */
+#hero.box {
+  position: relative;
+}
+
+#hero .nav-menu {
+  position: absolute;
+  top: 32px;
+  right: 32px;
+}
+
+#hero .nav-menu span {
+  font-size: 20px;
+}
+
+#hero .nav-menu i {
+  font-size: 24px;
+}
+
+#hero .hero-img {
+  position: absolute;
+  bottom: 0px;
+  right: 80px;
+}
+
+/* ------------------------
+          Camera
+--------------------------- */
+
+#camera .socials {
+  display: flex;
+  gap: 16px;
+}
+
+#camera .socials .social-item {
+  font-size: 28px;
+  color: var(--article-bg);
+  padding: 6px 14px;
+  background-color: var(--icon-color);
+}
+
+/* -------------------------
+        Photographer
+---------------------------- */
+
+#photographer {
+  padding: 0px;
+  display: block;
+}
+
+#photographer .article-img {
+  width: 100%;
+  height: auto;
+}
+
+/* -------------------------
+            Bridge
+---------------------------- */
+
+#bridge .content {
+  flex: 0 0 35%;
+}
+
+#bridge .article-img {
+  width: 60%;
+  margin: 64px;
+}
+
+/* -------------------------
+            Gallery
+---------------------------- */
+
+#gallery {
+  display: flex;
+  align-items: center;
+}
+
+#gallery .list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+#gallery .list .picture:nth-child(2) {
+  transform: scale(1.8);
+  z-index: 1;
+}
+
+/* ---------------------------
+          Contacts
+------------------------------*/
+
+#contacts {
+  position: relative;
+}
+
+#contacts .content {
+  width: 80%;
+  margin: auto;
+}
+
+#contacts .content .title {
+  text-align: center;
+}
+
+#contacts .content .description {
+  text-align: center;
+}
+
+#contacts .form {
+  max-width: 50%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas:
+    "email subject"
+    "msg msg"
+    "button button";
+  gap: 20px;
+}
+
+#contacts .form .email {
+  grid-area: email;
+}
+
+#contacts .form .subject {
+  grid-area: subject;
+}
+
+#contacts .form .msg {
+  grid-area: msg;
+}
+
+#contacts .form input,
+#contacts .form textarea {
+  background-color: transparent;
+  border: 1px solid var(--font-color);
+  padding: 4px;
+  width: 100%;
+}
+
+#contacts .form input::placeholder {
+  padding-left: 8px;
+  color: var(--font-color);
+}
+
+#contacts .form textarea {
+  resize: none;
+}
+
+#contacts .form textarea::placeholder {
+  padding-left: 8px;
+  color: var(--font-color);
+}
+
+#contacts .form .btn {
+  grid-area: button;
+  background-color: var(--font-color);
+  color: var(--article-bg);
+  padding: 4px;
+}
+
+#contacts .footer {
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

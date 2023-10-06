@@ -1,0 +1,44 @@
+html {
+  font-family: Helvetica, sans-serif;
+}
+
+body {
+  background-color: rgb(238, 238, 238);
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: auto;
+  margin-top: 64px;
+  font-family: Georgia, serif;
+  font-size: 1em;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.box-content {
+  padding: 20px;
+}
+
+.box-content .box-title {
+  font-size: 1.2em;
+}
+
+.box-content .box-text {
+  margin-bottom: 16px;
+  font-family: Helvetica, sans-serif;
+}
+
+.box-content .btn {
+  all: unset;
+  font-family: Helvetica, sans-serif;
+  background-color: rgb(0, 153, 0);
+  color: #fff;
+  padding: 4px 12px;
+  border-radius: 4px;
+  float: right;
+}
